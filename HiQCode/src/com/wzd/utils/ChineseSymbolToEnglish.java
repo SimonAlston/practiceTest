@@ -25,6 +25,9 @@ public class ChineseSymbolToEnglish {
                 replace =replace.replace('’','\'');
                 replace =replace.replace('‘','\'');
                 replace=replace.replace("＜","<");
+                replace=replace.replace("＞",">");
+                replace=replace.replace("fnal","final");
+                replace=replace.replace("_"," ");
                 System.out.println(replace);
             }
         } catch (IOException e) {
